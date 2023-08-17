@@ -33,7 +33,7 @@ RUN apk --no-cache add \
     tk-dev \
     zlib-dev
 
-ADD depends /depends
+ADD Pillow/depends /depends
 RUN cd /depends \
     && ./install_webp.sh \
     && ./install_imagequant.sh \
